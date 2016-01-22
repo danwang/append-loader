@@ -1,0 +1,22 @@
+{
+  "name": "append-loader",
+  "version": "1.0.0",
+  "description": "append loader module for webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danwang/append-loader.git"
+  },
+  "author": "Dan Wang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danwang/append-loader/issues"
+  },
+  "homepage": "https://github.com/danwang/append-loader#readme",
+  "dependencies": {
+    "loader-utils": "^0.2.12"
+  }
+}

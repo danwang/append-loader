@@ -4,8 +4,8 @@
 var loaderUtils = require('loader-utils');
 var HEADER = '/* append-loader start */';
 var FOOTER = '/* append-loader end */';
-module.exports = function(context) {
-  this.cacheable && this.cacheable();
-  var query = loaderUtils.parseQuery(this.query);
-  return context + HEADER + (query.content || '') + FOOTER;
+module.exports = function(content) {
+  this.cacheable();
+  var options = loaderUtils.getOptions(this);
+  return content + HEADER + (options.content || '') + FOOTER;
 };

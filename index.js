@@ -6,6 +6,6 @@ var HEADER = '/* append-loader start */';
 var FOOTER = '/* append-loader end */';
 module.exports = function(context) {
   this.cacheable && this.cacheable();
-  var query = loaderUtils.parseQuery(this.query);
+  var query = loaderUtils.getOptions(this);
   return context + HEADER + (query.content || '') + FOOTER;
 };

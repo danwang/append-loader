@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/danwang/append-loader#readme",
   "dependencies": {
-    "loader-utils": "^0.2.12"
+    "loader-utils": "^1.1.0"
+  },
+  "peerDependencies": {
+    "webpack": "^2.0.0"
   }
 }
